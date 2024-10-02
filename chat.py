@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import google.generativeai as genai
 
-
 model=genai.GenerativeModel("gemini-pro") 
 chat = model.start_chat(history=[])
 def get_gemini_response(question):
